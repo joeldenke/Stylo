@@ -1,0 +1,144 @@
+[versions]
+compileSdkVersion = "34"
+minSdkVersion = "26"
+targetSdkVersion = "34"
+versionCode = "1"
+versionName = "1.0"
+kotlinJvmToolchain = "17"
+
+koin = "3.4.2"
+ktor = "2.3.7"
+kotlin = "1.9.22"
+kotlinx-coroutines = "1.7.3"
+kotlinx-serialization = "1.6.1"
+kotlinx-datetime = "0.5.0"
+sqldelight = "2.0.0"
+gradle-plugin = "8.2.2"
+multiplatform-paging = "3.1.1-0.1.1"
+jetbrains-compose = "1.6.0-alpha01"
+jetbrains-compose-compiler = "1.5.8"
+google-services = "4.3.15"
+firebase-devlive = "1.11.1"
+androidx-lifecycle = "2.6.1"
+androidx-datastore = "1.1.0-beta01"
+androidx-core = "1.12.0"
+slack-circuit = "0.18.1"
+androidx-activity = "1.8.1"
+androidx-appcompat = "1.6.1"
+androidx-navigation = "2.7.5"
+androidx-media3-exoplayer = "1.2.1"
+androidx-compose-bom = "2023.10.01"
+androidx-compose-ui = "1.6.0-rc01"
+androidx-graphics-core = "1.0.0-alpha03"
+androidx-graphics-shapes = "1.0.0-alpha02"
+google-play-services = "20.5.0"
+ksp = "1.9.22-1.0.17"
+uuid = "0.8.2"
+coil = "3.0.0-alpha03"
+vlcj = "4.8.2"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "gradle.plugin" }
+android-library = { id = "com.android.library", version.ref = "gradle.plugin" }
+android-test = { id = "com.android.test", version.ref = "gradle.plugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+sqldelight = { id = "app.cash.sqldelight", version.ref = "sqldelight" }
+jetbrains-compose = { id = "org.jetbrains.compose", version.ref = "jetbrains.compose" }
+google-services = { id = "com.google.gms.google-services", version.ref = "google.services" }
+kotlin-native-cocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
+ksp-gradle = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+stylo-kotlin-multiplatform = { id = "se.denke.kotlin.multiplatform", version = "unspecified" }
+stylo-kotlin-android = { id = "se.denke.kotlin.android", version = "unspecified" }
+stylo-feature = { id = "se.denke.feature", version = "unspecified" }
+stylo-compose-multiplatform = { id = "se.denke.compose.multiplatform", version = "unspecified" }
+stylo-compose-android = { id = "se.denke.compose.android", version = "unspecified" }
+stylo-android-application = { id = "se.denke.android.application", version = "unspecified" }
+stylo-android-library = { id = "se.denke.android.library", version = "unspecified" }
+
+[libraries]
+slack-circuit-runtime = { module = "com.slack.circuit:circuit-runtime", version.ref = "slack.circuit" }
+slack-circuit-foundation = { module = "com.slack.circuit:circuit-foundation", version.ref = "slack.circuit" }
+slack-circuit-backstack = { module = "com.slack.circuit:circuit-backstack", version.ref = "slack.circuit" }
+slack-circuit-codegen-annotations = { module = "com.slack.circuit:circuit-codegen-annotations", version.ref = "slack.circuit" }
+slack-circuit-codegen = { module = "com.slack.circuit:circuit-codegen", version.ref = "slack.circuit" }
+slack-circuit-circuitx-gesture-navigation = { module = "com.slack.circuit:circuitx-gesture-navigation", version.ref = "slack.circuit" }
+slack-circuit-overlay = { module = "com.slack.circuit:circuit-overlay", version.ref = "slack.circuit" }
+
+kotlin-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx.coroutines" }
+kotlin-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx.coroutines" }
+kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx.serialization" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx.datetime" }
+
+kmp-uuid = { module = "com.benasher44:uuid", version.ref = "uuid" }
+
+androidx-compat = { module = "androidx.appcompat:appcompat", version.ref = "androidx.appcompat" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx.activity" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "androidx.navigation" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "androidx.lifecycle" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "androidx.lifecycle" }
+androidx-lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel", version.ref = "androidx.lifecycle" }
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "androidx.lifecycle" }
+androidx-core-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidx.core"  }
+androidx-datastore-preferences-core = { module = "androidx.datastore:datastore-preferences-core", version.ref = "androidx.datastore"  }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidx.compose-bom" }
+androidx-compose-bom-ui = { module = "androidx.compose.ui:ui" }
+androidx-compose-bom-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+androidx-compose-bom-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+androidx-compose-bom-material3 = { module = "androidx.compose.material3:material3" }
+androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "androidx.compose.ui" }
+androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "androidx.compose.ui" }
+androidx-graphics-core = { group = "androidx.graphics", name = "graphics-core", version.ref = "androidx.graphics.core" }
+androidx-graphics-shapes = { group = "androidx.graphics", name = "graphics-shapes", version.ref = "androidx.graphics.shapes" }
+
+sqldelight-coroutines = { module = "app.cash.sqldelight:coroutines-extensions", version.ref = "sqldelight" }
+sqldelight-native = { module = "app.cash.sqldelight:native-driver", version.ref = "sqldelight" }
+sqldelight-android = { module = "app.cash.sqldelight:android-driver", version.ref = "sqldelight" }
+
+google-android-play-services-auth = {module = "com.google.android.gms:play-services-auth", version.ref = "google.play.services"}
+kmp-firebase-auth = { module = "dev.gitlive:firebase-auth", version.ref = "firebase-devlive" }
+kmp-firebase-firestore = { module = "dev.gitlive:firebase-firestore", version.ref = "firebase-devlive" }
+
+ktor-core = { module = "io.ktor:ktor-client-core", version.ref="ktor" }
+ktor-darwin = { module = "io.ktor:ktor-client-darwin", version.ref="ktor" }
+ktor-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
+ktor-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-server-sessions = { module = "io.ktor:ktor-server-sessions", version.ref = "ktor" }
+
+koin = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+multiplatform-imageloader = { module = "io.github.qdsfdhvh:image-loader", version = "1.2.5" }
+multiplatform-paging-common = { module = "app.cash.paging:paging-common", version.ref="multiplatform.paging" }
+multiplatform-paging-runtime = { module = "app.cash.paging:paging-runtime", version.ref="multiplatform.paging" }
+
+coil = { module = "io.coil-kt.coil3:coil", version.ref = "coil" }
+coil-ktor = { module = "io.coil-kt.coil3:coil-network-ktor", version.ref = "coil"}
+coil-core = { module = "io.coil-kt.coil3:coil-core", version.ref = "coil"}
+coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil"}
+
+androidx-media3-exoplayer = { module = "androidx.media3:media3-exoplayer", version.ref = "androidx.media3.exoplayer"}
+androidx-media3-exoplayer-dash= { module = "androidx.media3:media3-exoplayer-dash", version.ref = "androidx.media3.exoplayer"}
+androidx-media3-ui = { module = "androidx.media3:media3-ui", version.ref = "androidx.media3.exoplayer"}
+
+caprica-vlcj = {module = "uk.co.caprica:vlcj", version.ref = "vlcj"}
+
+# Replace with androidx material3 window size class once avaiable in compose multiplatform
+chrisbanes-material3-windowsizeclass = { module = "dev.chrisbanes.material3:material3-window-size-class-multiplatform", version = "0.3.1" }
+
+tools-desugarjdklibs = "com.android.tools:desugar_jdk_libs:2.0.4"
+
+# Build logic dependencies
+android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "gradle-plugin" }
+kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+compose-gradlePlugin = { module = "org.jetbrains.compose:compose-gradle-plugin", version.ref = "jetbrains.compose" }
+
+[bundles]
+ktor = [
+    "ktor-json",
+    "ktor-logging",
+    "ktor-content-negotiation"
+]
